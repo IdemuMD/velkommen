@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Velkommen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">IKT-fag</p>
+        <h1 id="page-title">Velkommen til <span data-field="alias">alias</span> sitt rike</h1>
+        <p class="pool">
+          Pool: <strong data-field="pool">pool</strong>
+          <span>VLAN: <strong data-field="vlan">vlan</strong></span>
+        </p>
+      </section>
+
+      <section class="panel" aria-labelledby="network-title">
+        <div class="section-heading">
+          <p class="eyebrow">Oppgave 1</p>
+          <h2 id="network-title">Nettverksoversikt</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Host</th>
+                <th scope="col">Subnett (CIDR)</th>
+                <th scope="col">IP-adresse</th>
+                <th scope="col">Plassering</th>
+              </tr>
+            </thead>
+            <tbody id="network-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel message" aria-labelledby="message-title">
+        <div class="section-heading">
+          <p class="eyebrow">Oppgave 2</p>
+          <h2 id="message-title">Melding til neste års <span data-field="alias">alias</span></h2>
+        </div>
+        <p id="next-year-message"></p>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
