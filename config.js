@@ -4,7 +4,7 @@ window.siteConfig = {
   pool: "02",
   vlan: "1202",
   nextYearMessage:
-    "Mitt beste tips er å dokumentere alt du endrer, ta backup før du tester store endringer, og sjekke IP, DNS og gateway rolig når noe ikke virker. Start enkelt, test ett steg om gangen, og ikke vær redd for å spørre om hjelp.",
+    "Mitt beste tips: Ingenting er blokkert på Geir sitt nett.",
   hosts: [
     {
       host: "pve-frontend.ikt-fag.no",
