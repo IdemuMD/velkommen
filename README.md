@@ -15,8 +15,16 @@ En enkel statisk forside for oppgave 1 og 2.
 
 ## Kjør lokalt
 
+Med Python:
+
 ```bash
 python3 -m http.server 8080
+```
+
+Med npm:
+
+```bash
+npm start
 ```
 
 Åpne deretter:
@@ -64,3 +72,22 @@ systemctl status nginx
 Da skal siden kunne åpnes på IP-adressen eller DNS-navnet til VM-en.
 
 Hvis du endrer filene senere, kjør scriptet på nytt for å kopiere ny versjon til Nginx.
+
+## Publiser med npm på VM
+
+Hvis du heller vil kjøre siden med npm og Node.js:
+
+```bash
+chmod +x install-npm-service.sh
+./install-npm-service.sh
+```
+
+Dette kopierer siden til `/opt/velkommen`, lager en systemd-service og starter den automatisk ved boot på port `80`.
+
+Sjekk status:
+
+```bash
+systemctl status velkommen
+```
+
+Merk: bruk enten Nginx-scriptet eller npm-service-scriptet på port `80`, ikke begge samtidig.
