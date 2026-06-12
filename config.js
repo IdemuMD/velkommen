@@ -4,7 +4,7 @@ window.siteConfig = {
   pool: "02",
   vlan: "1202",
   nextYearMessage:
-    "Mitt beste tips: Ingenting er blokkert på Geir sitt nett.",
+    "Mitt beste tips: Ingenting er blokkert på Geir sitt nett. Det betyr at du teknisk sett kan game nesten hva du vil uten at det blir blokka, men gjør oppgaven først så du ikke mister kontrollen på VM-en din. Vi bruker 24-bit maske (/24), så de tre første oktettene bestemmer subnettet, og du velger bare siste oktett selv. Bruk gjerne ID-nummeret til VM-en som siste oktett i IP-adressen, da blir det mye enklere å huske hvilken IP som hører til hvilken VM.",
   hosts: [
     {
       host: "pve-frontend.ikt-fag.no",
